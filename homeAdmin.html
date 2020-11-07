@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"
+        ><img
+          width="50px"
+          height="50px"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8lsvft7e3u7u7r6+sArvgasPj18e5aw/kYr/iH0Pp+yfQktfZRvfM4ufY2uvno+P2+5/3Z6e5+x/J0xvTh6u6s2PLw+v+34/wds/Z8zfqO1Pqv2e+DyvK63PD58u3f9f5kw/TR5O6p3f2c2PrT7/2l1fDH7fv1/fyd2vqVz/PG4u/f6uu65PzU5fDZ8f3UAH9gAAAJsUlEQVR4nO1da3eiOhQVMSfSQXwMVlErUq3j6PT2//+7SwhWWxDyJlrOmg97jeSxm5Czc/Kg0yHWdV23+6CoY0k9WoYtw1qGqfUeFGWQku09KHIb70Z6kdsyvHvkXr2SvYdE+YBqR2X0IGp2dCit/rDxerQMpRk2rjz0oVbT3D36CR7/8RleXsnmnXOraYQQNTs6lFZ/2Hg9WobSDBtXHvpQq2nuHv0Ej//4DC+vJKsLxcQUo+63MhrUNG78ul30+/0BsX5fDQp3b9i1RNPEpwABOA4oNccDf4Wt8Pj4BTmaDAZd1wKGCYp0MXScoQWaZgn6+JFW5KmLDk3jvoJWhg7a42Y1DU70EnScCDfr8afaRpmzwbpRhnjl6Wbovah3GRyaBh91E3ScAW5U0+gdSYlBoJQct6Z50t5LYai0g3J7/CftbegELUO9msZALw1Y68KB2DUN/mWAIW5S0+BfBnpp3KjH/5EMQWYqbIohu6YpvocQPq9WY2IrYlzoefVS5Bg0q2kK3gIW5FcXY0xn57xoW/iTNa1pvjNEY7luNCtMVmzz+LCTK/2P9Qwd2I5Gowmx0YgfjQuvoYWaBpCMFbNrNU2raUpQq2kegaGMplHP0DJNo4GhUnLymkYPQ6s8fsvQJoaCmkaxtZqm1TQ/1ePLMQTwMiNxF25kiKGUpvF/vfx+IvabGCcaFPOzTtNkC+/im4WKGdqmaWTjNCProxjeXK70jfUMnWiT/orjOM57Hx86DIrvoT6GgpoGIt9P/+XGiYqDqY2aRmaHTckiQatpWk3zQxlKaRrlDG3TNOoZKiXXxmlahnfGUFDTKDYbNY1qhq2maT2+eoYypEsONtinacAP/CGxbDrEicoiUbZpmmiU/hoTy57jRDdmwDZpmsePYjx+JEo2mrgojSZapWnAXywWIbHFgh8FdxCniaTOIX7PrdU0rab5uQylNI1yhrZpGvUMlZJr4zQtwztjKKZpVJt9mkY9w0fVNAAeQlEwGCQ6zgE3zRAQ+OF+TebS6aRD7StoA0MULcbT+HyYRvUgo0DTeIznDsr/Nh4s3jod9ho0oGnQfDabTYnNZlVo0y9rvuG8o+9WGjWaBv6SXy/d/DY6wPfQIQrGX57T0UHlPT5HnGb4JW3k+etvz7nXMQ5rGEKY16g2JvM1qgZo931oma33LyG5VamfhMfn01Q9QzFN4yXz+fyZ2HxehbbXfTRCg3/nSVK3l/LfbJMoHYxoWCOLbyAYLt5n6Vvaa17T5Bsq4XNrZSn62vL765w3y2HZSAsOeMH8UF8r+zQN+P/hc84Yvw9uOBL650Phh/RgZNrjw8DF5/zwvmTj1xeLHNQ/xXfFEIWf9cUrh0XJAxr8h+UYSmkaXoLL+JzfaMB6bViEXjBL/bRoGl6CxzjPL97z3MgEwxO+izgNacEsP7fb57xyCu3Ew4zmGKJf51pOyhZHaxInwtMPYwyhfx5k3kTygaAnx1BM0/DY0M3zG1e5wAqK/oy5pl+QqTgNmuS5rMUIOhFEU9diTYOecyF+EiRIbNi11+NDkg+jUlcvklCctQz/0VwO1V4eahrYC2MBhlKahtwaQec76Du6foxcapnl0i/bJnTJLTmt/EqKaM9SU4WaxluQq3SIjd/f36/R1+t1ApoLPlY3EXlsVN2N0YQ7stNhb/YbN/CUzuzdeHdpcfRGc3mtUTIv5LGouiMH3CFVGYboT0WKyYVOfrdsHFQT9CjDmldxxxvFkWrD3e0UV3eBohNt132NPwUWhg5MTWoadPsGnvXlqQEdAN26oZgyrNWsITaoaaKKG3guf4Zxlgve1dTc8ZbpHAnXMkQb2zSNn/ul2gdhmY4iuNpdOFkM0y6PT15WEnXa1aZmZOigGXOdjTBMO1XGsH5OyMrQWcZWxWnoBhJ3Xf/nAfoeMuTJs6Ajp2kYDI5UsBV3WhYfZfIWztkP2xKnQSfqoRnSMjOk6yXWRDFo2j8qGTqORQyjAY3OsNyUzc7Qe+NnyKIPlvwEs9eQpA0Ywr+MmoYw/Mta5zNk0zTPAm0I2SJqr8cSH2XUNMT6PPtu2L3nRODLAbAhafGJJSmzP0x1EvsEg+fbCLhm9lNmXpbW3bM0DAdD9E8LQ3fN34hRlhaXXKgrx/CkQ9Ok7wj/JzwCyjBheZZd0ziwwjo0TWq8/RTIkJCmLZ5wKnuY3R96Wy2ahqCAT5vCAmdp2RqGnWE+YVHt8QlKJ0E8PRWeKEOmxVDKkOlIIyy1MXSxu08+XRZ8HrG8hZbcDDcsDhGetGiazrU8uAzB1YimZWMY0hQJKuwRK2WoXNOUoC4jipkYRs4pzqq1rV29gRfMXlOeiIAoiplGGrKZiC4Tf9SGFI/MazRmvvCImbyFQxazXbqYPaimCHs9mkacYcLIMO2qr7TVj5X6CVZ6NI0wYlNtlCGih4vjU5XbSFWbJk0jiuYcQoH0VJL20L+ZKEIHbZpGEL1xaXZ/QlewbvdUn6MGZhh2+GYlaJWlxTd7amIfQz7JHqEFTTstnoYmlm0w16dphBDvN9tgOMrSln/4FD44aiClaZiRu+aNl0feii7Krct+5frWpQl/2GVYeSoY+pWlxcX1AAg5dtWa+mo1DvkDdRCQfV7d4qcz0ZqjBsa+y30SCUWSWCReFRbXHczF0ISm6bHGQQut9fS2L/7vDnPUwJCmSW0rtr5aMpFCU64adFR0QSak6mwfhJirXHMMazZEMRua8O0WNsdQwGGUWsi5QTFnqFvTdMiOISVfTIYpZ7lmNA1F5SKTz9CWu1xD/pCgkYJvzwe85Rrz+Bn6K91P0chuhp1+bSS0huCeu1xjmiZHci0IYcxdrjlNQ4sbyQw2MBApt8Pd7HKIL2LzlaDYzSemGZZ8uJLNIvAP98FQlKKXERRnaEDTfKIPkR2AXiBarklNkyM8YlyouTISfBMt16g/PKOEsxkzrSZWmmGP/4nmPIvlEGzES2uKYWc2QJUnhK4bcMk35W1W01xQvGbadeGgZHK13isgMjoNkDujeX10Cg0+ZEvrMDa2HrSqujUCAMJX/uN4zXv8a4TjydFHJR8NSlsP+s9dFTfVNMuw62Icj+ahj7zr22kRBE/jg6JBMGdoUtOUocPp+fg7Sfr9ZPGyW51UltGApikit0sDhDg+H2BUWauG/KEx1JjHbxkqZNiUpjEWOOk0XgXdiJodHUoPahneP8oZmtQvhpEVmkYvenx/2DK8d9RqmgdA1OzoUFr9YeP1aBlKM2xceehDraa5e/QTPP7jM7y8ks0751bTCCFqdnQorf6w8Xq0DGUZXgbUx0P/A06hbalLR6zyAAAAAElFTkSuQmCC"
+          alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hiếu  -->
+    <show-pop-up id="popup" show="false"></show-pop-up>
+    <div class="calendar" col-sm-4 col-md-7 col-mg-4 mt-5>
+      <h1>Calendar Work</h1>
+      <div class="card">
+        <h3 class="card-header" id="montAndYear">Month And Year</h3>
+        <table class="table table-bordered table-responsive-sm" id="calendar">
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody id="calendar-body"></tbody>
+        </table>
+
+        <div class="form-inline">
+          <button class="btn btn-outline-primary" onclick="Previous()">
+            Previous
+          </button>
+          <button class="btn btn-outline-primary" onclick="Next()">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="./js/calendar.js"></script>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDMJIfVyZB6ASFDWd3PCYXx8YYzrMS8lNc",
+        authDomain: "ci-50-bb832.firebaseapp.com",
+        databaseURL: "https://ci-50-bb832.firebaseio.com",
+        projectId: "ci-50-bb832",
+        storageBucket: "ci-50-bb832.appspot.com",
+        messagingSenderId: "757195160579",
+        appId: "1:757195160579:web:f219b709e2319e2a46a236",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      const auth = firebase.auth();
+    </script>
+  </body>
+
+  <template id="popup-template">
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <form id="add-event">
+          <label>Tạo ca làm</label>
+          <label id="time-in"> Giờ vào ca </label>
+          <input type="time" name="timeIn" id="check-in-time" />
+          <label id="time-out">Giờ kết ca</label>
+          <input type="time" name="timeOut" id="check-out-time" />
+          <button type="submit" id="btn-get-time">Tạo ca làm</button>
+          <ul id="list"></ul>
+        </form>
+      </div>
+    </div>
+  </template>
+  <template id="check-in-template">
+    <div>
+      <label>
+        <input type="date" />
+      </label>
+      <button
+        class="btn btn-outline-primary"
+        id="check-in"
+        style="align-self: center; width: 100%; height: 40px"
+      >
+        Vào ca
+      </button>
+    </div>
+  </template>
+
+  <script src="./js/PopUpAddEvent.js" type="module"></script>
+</html>
